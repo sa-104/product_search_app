@@ -1,0 +1,52 @@
+# Product Search App（Flask）
+
+楽天市場の商品検索APIを利用した検索アプリです。  
+キーワード検索、価格順、レビュー順などで商品を並び替えできます。
+
+---
+
+## 必要なもの
+
+- Python 3.x
+- Flask
+- requests
+
+---
+
+##ディレクトリ構成
+
+product_serch_app/
+├── main.py
+└── templates/
+    ├── index.html
+    └── result.html
+
+
+##インストール
+
+リポジトリをクローン：
+git clone https://github.com/sa-104/product_search_app.git
+cd product-search-app
+
+必要なライブラリをインストール：
+pip install flask requests
+
+##使い方
+1. 楽天APIの applicationId を取得する
+Rakuten Developers でアプリを作成し、applicationId を取得する。
+
+2. app.py に APIキーを入力する
+アプリ内の以下の部分に自分の applicationId を入れる：
+f"?applicationId=[YOUR_APP_ID]&keyword={urllib.parse.quote(keyword)}"
+
+3. アプリを起動
+python app.py
+
+ブラウザでアクセス：http://127.0.0.1:5000/
+
+##仕様
+・商品検索（キーワード）
+・価格昇順 / 価格降順
+・レビュー数の多い順 / 少ない順
+・評価が高い順 / 低い順
+・商品画像・商品リンク表示
