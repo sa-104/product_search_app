@@ -15,11 +15,13 @@
 
 ##ディレクトリ構成
 
-product_serch_app/
-├── main.py
-└── templates/
-    ├── index.html
-    └── result.html
+product_search_app/
+├── app.py
+├── templates/
+├── README.md
+└── images/
+    ├── index.png
+    └── result.png
 
 
 ##インストール
@@ -50,3 +52,11 @@ python app.py
 ・レビュー数の多い順 / 少ない順
 ・評価が高い順 / 低い順
 ・商品画像・商品リンク表示
+
+## アプリ画面
+
+### トップ画面
+![トップ画面](images/index.png)
+
+### 検索結果画面
+![検索結果画面](images/result.png)
